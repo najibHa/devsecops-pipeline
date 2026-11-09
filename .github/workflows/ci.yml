@@ -65,7 +65,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Trivy image scan
-        uses: aquasecurity/trivy-action@0.33.1 # Check Releases for the latest, then pin it
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: scan-target:ci
           severity: CRITICAL,HIGH
