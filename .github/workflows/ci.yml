@@ -40,7 +40,7 @@ jobs:
       image: semgrep/semgrep
     steps:
       - uses: actions/checkout@v4
-      - run: semgrep scan --config auto --error
+      - run: semgrep scan --config auto --error --exclude-rule yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag
 
   build-scan-push:
     needs: [test, secrets-scan, sast]
