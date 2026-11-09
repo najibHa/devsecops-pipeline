@@ -6,6 +6,9 @@ app.use(express.json());
 
 const todos = [];
 
+//adding a fake secret to trigger the secret scanner to stop the PR
+const token = 'ghp_whdtrolsecr4657901retdcbfhgpl2345hvB';
+
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 app.get('/todos', (req, res) => res.json(todos));
