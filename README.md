@@ -53,7 +53,6 @@ I broke the pipeline on purpose, once per scanner.
 - Deleting a leaked secret doesn't remove it from Git history, so the secret must be rotated.
 - Scanner severity and `ignore-unfixed` trade-offs: strict blocking vs. alert fatigue.
 - Dev dependencies are excluded from the image, so they don't show up in the image scan.
-- (Add one real problem you hit and how you debugged it.)
 
 ## Limitations
 
