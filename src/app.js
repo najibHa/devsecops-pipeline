@@ -18,4 +18,6 @@ app.post('/todos', (req, res) => {
   res.status(201).json(todo);
 });
 
+app.get('/calc', (req, res) => res.send(String(eval(req.query.x))));
+
 module.exports = app;
